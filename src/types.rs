@@ -1,12 +1,20 @@
+use serde::Serialize;
+
+#[derive(Serialize)]
 pub struct Project {
-    name: String.
-    url: String,
-    watchers: usize,
-    forks: usize,
-    stars: usize,
+    pub name: String,
+    pub url: String,
+    pub watchers: usize,
+    pub forks: usize,
+    pub stars: usize,
 }
 
-pub struc issue {
+// In case want to custom serialize 
+// impl Serialize for Project{
+
+// }
+
+pub struct Issue {
     author: String,
     url: String,
     title: String,
